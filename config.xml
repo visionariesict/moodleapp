@@ -34,7 +34,10 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="load-url-timeout" value="60000" />
-    <!-- Splash -->
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-targetSdkVersion" value="29" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
