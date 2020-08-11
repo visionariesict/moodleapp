@@ -35,7 +35,22 @@
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="load-url-timeout" value="60000" />
      <!-- you can use any density that exists in the Android project -->
-    <splash src="resources/splash.png" />
+<platform name="android">
+    
+    <splash src="resources/splash.png" density="land-hdpi" />
+    <splash src="resources/splash.png" density="land-ldpi" />
+    <splash src="resources/splash.png" density="land-mdpi" />
+    <splash src="resources/splash.png" density="land-xhdpi" />
+    <splash src="resources/splash.png" density="land-xxhdpi" />
+    <splash src="resources/splash.png" density="land-xxxhdpi" />
+
+    <splash src="resources/splash.png" density="port-hdpi" />
+    <splash src="resources/splash.png" density="port-ldpi" />
+    <splash src="resources/splash.png" density="port-mdpi" />
+    <splash src="resources/splash.png" density="port-xhdpi" />
+    <splash src="resources/splash.png" density="port-xxhdpi" />
+    <splash src="resources/splash.png" density="port-xxxhdpi" /> 
+</platform>
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="SplashMaintainAspectRatio" value="true" />
