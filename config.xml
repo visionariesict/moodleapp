@@ -174,7 +174,7 @@
                 <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
             </feature>
         </config-file>
-       <-- add codrdova splashscreen --->
+       <-- add codrdova splashscreen -->
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="StatusBar">
                 <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
