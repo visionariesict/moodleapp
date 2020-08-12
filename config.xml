@@ -34,7 +34,7 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="LoadUrlTimeoutValue" value="60000" />
     <preference name="load-url-timeout" value="60000" />
-     <!-- you can use any density that exists in the Android project -->
+     <!--add splash -->
 <!-- <platform name="android"> -->
     
     <!-- <splash src="resources/splash.png" density="land-hdpi" /> -->
