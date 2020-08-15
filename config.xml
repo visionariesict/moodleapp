@@ -53,7 +53,7 @@
     <splash src="resources/splash.png" density="port-xxxhdpi" /> 
    </platform>
     <preference name="SplashScreen" value="none" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="0" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="0" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
