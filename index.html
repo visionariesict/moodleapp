@@ -80,8 +80,7 @@
             // Plugins may not be able to listen for the deviceready event because it's possible that it was fire
             // when plugins whasn't loaded, we use a timeout of 5 seconds.
             setTimeout(function() {
-                //alert('hide now');
-                //navigator.splashscreen.hide();
+               
                 for (var el in MM.plugins) {
                     var plugin = MM.plugins[el];
 
@@ -91,7 +90,13 @@
                 }
             }, 5000);
             MM.fs.init();
+document.addEventListener("deviceready", onDeviceReady, false);
 
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.hide();
+    }
             // Check calendar events for new notifications.
             if (MM.plugins.events && MM.plugins.events.isPluginVisible()) {
                 MM.plugins.events.checkLocalNotifications();
