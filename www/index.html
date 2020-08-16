@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="cordova.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('deviceready', function () {
+            alert('deviceready');
+            setTimeout(function () {
+                alert('hide now');
+                navigator.splashscreen.hide();
+            },4000);
+        })
+    </script>
+    Content goes here...
+</body>
+</html>
