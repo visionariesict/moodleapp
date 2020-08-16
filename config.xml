@@ -36,7 +36,7 @@
     <preference name="load-url-timeout" value="60000" />
      <!--add splash -->
     <!-- you can use any density that exists in the Android project -->
-   <!--  <platform name="android">
+ <platform name="android">
   
   
         <splash src="resources/splash.png" density="land-hdpi" />
@@ -52,14 +52,14 @@
     <splash src="resources/splash.png" density="port-xhdpi" />
     <splash src="resources/splash.png" density="port-xxhdpi" />
     <splash src="resources/splash.png" density="port-xxxhdpi" /> 
-   </platform>
+   </platform> 
     <preference name="SplashScreen" value="none" />
     <preference name="SplashScreenDelay" value="0" />
     <preference name="SplashMaintainAspectRatio" value="false" />
     <preference name="FadeSplashScreenDuration" value="0" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="AutoHideSplashScreen" value="false" />
--->
+
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-targetSdkVersion" value="29" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
