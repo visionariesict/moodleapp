@@ -91,13 +91,13 @@
                 }
             }, 5000);
             MM.fs.init();
-document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        navigator.splashscreen.hide();
-    }
+document.addEventListener('deviceready', function () {
+            alert('deviceready');
+            setTimeout(function () {
+                alert('hide now');
+                navigator.splashscreen.hide();
+            },4000);
+        })
             // Check calendar events for new notifications.
             if (MM.plugins.events && MM.plugins.events.isPluginVisible()) {
                 MM.plugins.events.checkLocalNotifications();
