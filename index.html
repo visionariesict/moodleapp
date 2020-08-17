@@ -90,6 +90,12 @@
                     }
                 }
             }, 5000);
+            
+          
+       document.addEventListener('deviceready', function() {
+  navigator.splashscreen.hide();
+});
+    </script>
             MM.fs.init();
 
             // Check calendar events for new notifications.
@@ -116,15 +122,7 @@
     <style id="mobilecssurl"></style>
 </head>
 <body>
-<script>
-        document.addEventListener('deviceready', function () {
-            alert('deviceready');
-            setTimeout(function () {
-                alert('hide now');
-                navigator.splashscreen.hide();
-            },4000);
-        })
-    </script>
+
 <div id="add-site" style="display: none">
 
 </div>
