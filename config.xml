@@ -53,10 +53,10 @@
     <splash src="resources/splash.png" density="port-xxhdpi" />
     <splash src="resources/splash.png" density="port-xxxhdpi" /> 
    </platform> 
-    <preference name="SplashScreen" value="none" />
-    <preference name="SplashScreenDelay" value="0" />
-    <preference name="SplashMaintainAspectRatio" value="false" />
-    <preference name="FadeSplashScreenDuration" value="0" />
+    <preference name="SplashScreen" value="Screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="SplashMaintainAspectRatio" value="True" />
+    <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="AutoHideSplashScreen" value="false" />
 
@@ -86,7 +86,7 @@
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="IntentShim">
                 <param name="android-package" value="com.darryncampbell.cordova.plugin.intent.IntentShim" />
                 <param name="onload" value="true" />
@@ -97,39 +97,39 @@
                 <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
             </provider>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Clipboard">
                 <param name="android-package" value="com.verso.cordova.clipboard.Clipboard" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="CordovaHttpPlugin">
                 <param name="android-package" value="com.silkimen.cordovahttp.CordovaHttpPlugin" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Camera">
                 <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="LaunchMyApp">
                 <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Device">
                 <param name="android-package" value="org.apache.cordova.device.Device" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="File">
                 <param name="android-package" value="org.apache.cordova.file.FileUtils" />
                 <param name="onload" value="true" />
             </feature>
             <allow-navigation href="cdvfile:*" />
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="FileOpener2">
                 <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2" />
             </feature>
@@ -139,27 +139,27 @@
                 <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/opener_paths" />
             </provider>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="FileTransfer">
                 <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Geolocation">
                 <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Globalization">
                 <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="InAppBrowser">
                 <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="LocalNotification">
                 <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
             </feature>
@@ -178,52 +178,53 @@
                 </intent-filter>
             </receiver>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Capture">
                 <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="NetworkStatus">
                 <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="QRScanner">
                 <param name="android-package" value="com.bitpay.cordova.qrscanner.QRScanner" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="CDVOrientation">
                 <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
             </feature>
         </config-file>
        <!-- add codrdova splashscreen -->
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="SplashScreen">
+                
                 <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
   
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="StatusBar">
                 <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="Whitelist">
                 <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="SQLitePlugin">
                 <param name="android-package" value="io.sqlc.SQLitePlugin" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file parent="/*" target="config.xml">
             <feature name="PushNotification">
                 <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
             </feature>
