@@ -199,6 +199,8 @@
             </feature>
         </config-file>
        <!-- add codrdova splashscreen -->
+        <preference name="phonegap-version" value="cli-9.0.0" />
+            <gap:plugin name="org.apache.cordova.splashscreen" />
         <config-file parent="/*" target="config.xml">
             <feature name="SplashScreen">
                 
