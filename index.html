@@ -72,8 +72,9 @@
        document.addEventListener('deviceready', function() {
   navigator.splashscreen.hide();
 });
+             MM.fs.init();
     </script>
-            MM.fs.init();
+           
 
             // Check calendar events for new notifications.
             if (MM.plugins.events && MM.plugins.events.isPluginVisible()) {
