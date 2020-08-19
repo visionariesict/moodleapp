@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
+  "name": "eseleda elearning",
   "version": "3.9.2",
-  "description": "The official app for Moodle.",
+  "description": "eseleda elearning app.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "visionaries ict solution plc",
+    "email": "admin@eseleda.com"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moodlehq/moodlemobile2.git"
+    "url": "https://github.com/visionariesict/moodleapp.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -124,6 +124,7 @@
     "jszip": "3.1.5",
     "mathjax": "2.7.7",
     "moment": "2.24.0",
+    "moodlemobile": "github:visionariesict/moodleapp",
     "nl.kingsquare.cordova.background-audio": "1.0.1",
     "phonegap-plugin-multidex": "1.0.0",
     "phonegap-plugin-push": "git+https://github.com/moodlemobile/phonegap-plugin-push.git#moodle-v3",
@@ -218,7 +219,7 @@
   },
   "main": "desktop/electron.js",
   "build": {
-    "appId": "com.moodle.moodledesktop",
+    "appId": "com.moodle.eSeleda"",
     "productName": "Moodle Desktop",
     "files": [
       "desktop/electron.js",
